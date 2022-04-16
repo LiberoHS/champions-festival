@@ -10,10 +10,17 @@ export enum TournamentTier {
     WORLDS = "Worlds"
 }
 
-export interface TournamentFormat {
-    start: string;
-    end: string;
+export interface SetFormat {
+    startDate: string;
+    endDate: string;
     year: number;
+    startCardSet: string;
+    endCardSet: string;
+}
+
+export enum TournamentFormat {
+    STANDARD = "Standard",
+    EXPANDED = "Expanded"
 }
 
 export interface Tournament {
@@ -23,7 +30,7 @@ export interface Tournament {
     region: string;
     attendance: number;
     tournamentTier: TournamentTier;
-    quarter: number;
-    format: TournamentFormat;
+    setFormat: SetFormat;
+    tournamentFormat: TournamentFormat;
     standings: PlayerStandings[];
 }
