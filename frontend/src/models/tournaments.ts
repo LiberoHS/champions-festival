@@ -11,8 +11,8 @@ export enum TournamentTier {
 }
 
 export interface SetFormat {
-    startDate: string;
-    endDate: string;
+    startDate?: string;
+    endDate?: string;
     year: number;
     startCardSet: string;
     endCardSet: string;

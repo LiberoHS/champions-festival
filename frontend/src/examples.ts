@@ -1,4 +1,4 @@
-import {Tournament, TournamentTier} from "./models/tournaments";
+import {Tournament, TournamentFormat, TournamentTier} from "./models/tournaments";
 
 export const EXAMPLE_TOURNAMENT: Tournament = {
     tournamentId: 1,
@@ -7,11 +7,11 @@ export const EXAMPLE_TOURNAMENT: Tournament = {
     region: "NSW",
     attendance: 123,
     tournamentTier: TournamentTier.LEAGUE_CUP,
-    quarter: 1,
-    format: {
-        start: "SWS",
-        end: "BRS",
+    setFormat: {
+        startCardSet: "SWS",
+        endCardSet: "BRS",
         year: 2022
     },
+    tournamentFormat: TournamentFormat.STANDARD,
     standings: []
 }
