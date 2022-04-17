@@ -4,7 +4,11 @@ import mu.KotlinLogging
 import org.springframework.stereotype.Service
 import ptcg.championsfestival.db.TournamentEntity
 import ptcg.championsfestival.db.TournamentRepository
-import ptcg.championsfestival.model.*
+import ptcg.championsfestival.model.NewTournamentRequest
+import ptcg.championsfestival.model.SetFormat
+import ptcg.championsfestival.model.Tournament
+import ptcg.championsfestival.model.TournamentFormat
+import ptcg.championsfestival.model.TournamentTier
 
 @Service
 class ResultsService(
